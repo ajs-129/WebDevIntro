@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'carringtonregular';
+    src: url('carrington/Carrington-webfont.eot');
+    src: url('carrington/Carrington-webfont.eot?#iefix') format('embedded-opentype'),
+         url('carrington/Carrington-webfont.woff2') format('woff2'),
+         url('carrington/Carrington-webfont.woff') format('woff'),
+         url('carrington/Carrington-webfont.ttf') format('truetype'),
+         url('carrington/Carrington-webfont.svg#carringtonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+header, footer {
+    background-color: brown;
+    color:wheat;
+    text-align: center;
+    font-size: 1.3em;
+   
+}
+
+footer {height: 100px;}
+
+nav a {
+        background-color: brown;
+        color: tan;
+        padding: 8px;
+        border: thin solid #0d1f2d;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        margin: 20px;
+        width: 100px;
+        float: left;
+    } 
+
+    nav a:visited {
+        color:yellow; 
+    }
+
+    nav a:hover {
+        background-color: yellow;
+        color: brown; 
+    }
+
+    nav a:active {
+        font-weight: bold;
+    }
+
+   .container{background-color: tan;
+    
+}
+
+#name, #phone {
+    border-color: firebrick;
+    border-width: 5px;
+  }
+
+/* Clashed with alert 
+input:invalid {
+    background-color: #ffdddd;
+  }
+  form:invalid {
+    border: 5px solid #ffdddd;
+  }
+ */

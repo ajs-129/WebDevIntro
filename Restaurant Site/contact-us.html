@@ -1,0 +1,153 @@
+<!DOCTYPE html> 
+<html lang="en" class="container"> 
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Anything and Everything!</title>	
+
+        <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+        <script type="text/JavaScript" src="restaurantForm.js"></script>
+
+        <style>
+            .jumbotron {background-color: firebrick;}
+
+            footer{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+
+            nav, article {text-align: left;}
+
+            label, br {font-weight: bold;}
+
+            article {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; background-color: rgb(228, 164, 81);}
+
+            input {margin: 5px;}
+
+
+
+        </style>
+
+    </head> 
+    
+    <body>
+        <div class="container">
+        <main> 
+            <header class="jumbotron"> 
+                <h1 style="color: rgb(228, 164, 81); text-align: center; font-family: carringtonregular; ">Anything and Everything!</h1>
+                <h4 class="text-right">New Location Opening Soon!</h4>
+                <h6> 
+                    <noscript class="noscript">
+                    <div>
+                        This site is best viewed with JavaScript enabled!
+                    </div>
+                    </noscript>
+                </h6>
+            </header>
+
+            <nav>
+                
+                <p><a class="btn badge-pill" href="index.html"><i class="fa fa-home"></i> Home</a></p>
+                <p><a class="btn badge-pill" href="menu.html">Menu</a></p>
+                <p><a class="btn badge-pill" href="contact-us.html">Contact Us</a></p>
+            
+            </nav>
+            <div style="clear:both"></div>
+           
+            <section> 
+                <article> 
+                    
+                    <form onsubmit="return validateForm(); return checkFilled();" name="contactUs">
+
+                        <div class="form-group row-lg-1">
+                            <label for="name" class="col col-form-label">Name: </label>
+                            <div class="col">
+                                <input type="text" id="name" class="form-control" name="name"/>
+                            </div>
+                        </div>
+                        <div class="form-group row-lg-1">
+                            <label for="email" class="col col-form-label">Email:</label>
+                            <div class="col">
+                                <input type="text" id="email" class="form-control" name="email"/>
+                            </div>
+                        </div>
+                        <div class="form-group row-lg-1">
+                            <label for="phone" class="col col-form-label">Phone: </label>
+                            <div class="col">
+                                <input type="tel" id="phone" class="form-control" name="phone">
+                            </div>
+                        </div>
+                        <div class="form-group row-lg-1">
+                            <label for="reason" class="col col-form-label">Reason for Inquiry: </label>
+                            <div class="col">
+                                <select name="reason" class="form-control">
+                                    <option value="Catering">Catering</option>
+                                    <option value="PrivateParty">Private Party</option>
+                                    <option value="Feedback">Feedback</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row-lg-3">
+                            <label for="info" class="col col-form-label">Additional Information</label>
+                            <div class="col">
+                                <textarea class="form-control" name="info"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row-lg-3">
+                            <label for="visit" class="col col-form-label">Have you been to the restaurant?</label>
+                            <div class="col">
+                                <div class="form-check-inline">
+                                <input type="radio" name="visit" value="No" checked>No
+                                </div>
+                                <div class="form-check-inline">
+                                <input type="radio" name="visit" value="Yes">Yes
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row-lg-3">
+                            <label for="contact" class="col col-form-label">Best days to contact you:</label>
+                            <div class="col">
+                                <div class="form-check-inline">
+                                    <input type="checkbox" name="contact" value="Monday">M
+                                </div>
+                                <div class="form-check-inline">
+                                    <input type="checkbox" name="contact" value="Tuesday">T
+                                </div>
+                                <div class="form-check-inline">
+                                    <input type="checkbox" name="contact" value="Wednesday">W
+                                </div>
+                                <div class="form-check-inline">
+                                    <input type="checkbox" name="contact" value="Thursday">Th
+                                </div>
+                                <div class="form-check-inline">
+                                    <input type="checkbox" name="contact" value="Friday">F
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row-lg-3">
+                            <button class="btn btn-danger btn-md" type="submit">Submit</button>
+                        </div>
+                    </form>
+                        
+                      
+                </article>
+
+            </section>
+
+            <footer> 
+                <hr />
+                <p>
+                    1855 Tasty Street, Stow, Ohio, 44224 <br />
+                    330-220-1110
+                </p>
+            </footer>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	</div>
+    </body> 
+</html>
